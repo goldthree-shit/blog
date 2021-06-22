@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=utf-8&characterEncoding=utf-8&serverTimezone=GMT
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+logging:
+  level:
+    root: info
+    com.xiaoxinblog: debug
+  file:
+    name: log/blog-dev.log
+
+server:
+  port: 80
